@@ -113,7 +113,7 @@ ipcMain.on('uploadFW', (e, args) => {
 
   var hexFile = 'flash:w:' + firmwareFile + ':i';
 
-  var execArgs = ['-v', '-pm328p', '-C', configName, '-carduino', '-b 57600', '-P', args.port, '-D', '-U', hexFile];
+  var execArgs = ['-v', '-pm328p', '-C', configName, '-carduino', '-b 115200', '-P', args.port, '-D', '-U', hexFile];
 
   console.log(executableName);
   //const child = spawn(executableName, execArgs);
